@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainwrapper {
+    display: top;
+    width: 375px;
+    border: none;
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 9px; 
+    grid-template-columns: repeat(11,71.6363636363px);
+    grid-template-areas:
+        "top top top top top"
+        "mid mid mid mid mid"
+        "mid mid mid mid mid"
+        "mid mid mid mid mid"
+        "mid mid mid mid mid"
+
+}
+
+
+
