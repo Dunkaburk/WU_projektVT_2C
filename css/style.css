@@ -4,15 +4,34 @@
     box-sizing: border-box;
 }
 
-.mainwrapper {
-    display: top;
+.topwrapper {
+    display: grid;
     width: 375px;
+    height: 10vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     border: none;
-    grid-template-rows: repeat(10,1fr);
-    /* grid-gap: 9px;  */
-    grid-template-columns: 1;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1;
+    grid-template-areas: 
+
+        "bilar omoss logo omoss2 omoss3"
+    
+    ;
+
+
+}
+.mainwrapper {
+    display: grid;
+    width: 375px;
+    height:90vh;
+    border: none;
+    margin-top: 10vh;
+    grid-template-rows: repeat(9, fr);
+    /* grid-gap: 9px;   */
+    grid-template-columns: 1fr;
     grid-template-areas:
-        "top"
         "bil"
         "bil"
         "tit"
@@ -21,9 +40,80 @@
         "sol"
         "com"
         "who"
-        "tom"
+        "tom" ;
         
+} 
+
+
+.top {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: blue;
+    height: 10vh;
+    width: 375px;
+    
 }
 
+.bil {
+    grid-area: bil;
+    background-color: red;
+    
 
+}
 
+.tit {
+    grid-area: tit;
+    background-color: green;
+}
+
+.quo {
+    grid-area: quo;
+    background-color: orange;
+}
+
+.agi {
+    grid-area: agi;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+
+}
+
+.sol {
+    grid-area: sol;
+    background-color: peru;
+
+}
+
+.com {
+    grid-area: com;
+    background-color: beige;
+}
+
+.who {
+    grid-area: who;
+    background-color: yellow;
+}
+
+.tom {
+    grid-area: tom;
+    background-color: black;
+}
+
+.blaknapp {
+    width: 306px;
+    height: 55px;
+  
+    
+    background: #007BCD;
+    border: 1px solid #007BCD;
+    box-sizing: border-box;
+    
+    /* display: table;
+    margin: 0 auto;
+    text-align: center; */
+    align-items: center;
+    justify-content: center;
+}
