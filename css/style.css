@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .topwrapper {
@@ -21,15 +23,15 @@
     ;
 
 
-}
-.mainwrapper {
+} 
+/* .mainwrapper {
     display: grid;
     width: 375px;
     height:90vh;
     border: none;
     margin-top: 10vh;
     grid-template-rows: repeat(9, fr);
-    /* grid-gap: 9px;   */
+    grid-gap: 9px;   
     grid-template-columns: 1fr;
     grid-template-areas:
         "bil"
@@ -42,78 +44,184 @@
         "who"
         "tom" ;
         
-} 
+}  */
 
-
-.top {
+/*--------------------------------- Navbar ------------------------------------------- */
+.topwrapper {
     position: fixed;
+    display: flex;
     top: 0px;
     left: 0px;
-    background-color: blue;
+    
     height: 10vh;
-    width: 375px;
+    width: 100%;
+    flex-direction: row;
+    
     
 }
 
+
+.bilar  {
+    /* text-align: center; */
+    
+    grid-area: bilar;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+
+.omoss {
+    grid-area: omoss;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.logo {
+    grid-area: logo;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.volvologga {
+    grid-area: logo;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.omoss2 {
+    grid-area: omoss2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+
+.omoss3 {
+    grid-area: omoss3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+/*--------------------------------- Sidan --------------------------------------------------*/
+
+
+
+
 .bil {
-    grid-area: bil;
+    /* grid-area: bil; */
     background-color: red;
+    
+    height: 20vh;
+    margin-top: 10vh;
+    
     
 
 }
 
 .tit {
-    grid-area: tit;
-    background-color: green;
+    /* grid-area: tit; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.tit p{
+    color: black;
+    font-size: 36px;
 }
 
 .quo {
-    grid-area: quo;
-    background-color: orange;
+    /* grid-area: quo; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 10vh; 
+    text-align: center;
+}
+
+.quo p {
+
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    font-size: 24px;
+
 }
 
 .agi {
-    grid-area: agi;
+    /* grid-area: agi; */
     display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: pink;
-
+    
+    height: 10vh; 
 }
 
 .sol {
-    grid-area: sol;
-    background-color: peru;
+    /* grid-area: sol; */
+
+    height: 10vh; 
+    display: flex;
 
 }
 
 .com {
-    grid-area: com;
-    background-color: beige;
+    /* grid-area: com; */
+
+    height: 10vh; display: flex;
 }
 
 .who {
-    grid-area: who;
-    background-color: yellow;
+    /* grid-area: who; */
+
+    height: 10vh; 
+    display: flex;
+    
 }
 
 .tom {
-    grid-area: tom;
-    background-color: black;
+   /*  grid-area: tom; */
+
+    height: 10vh; 
 }
 
 .blaknapp {
     width: 306px;
     height: 55px;
-  
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-sizing: border-box;
+    margin: auto;
+    
     
     background: #007BCD;
     border: 1px solid #007BCD;
-    box-sizing: border-box;
+
+    transition: background-color .3s ease,color .3s ease;
+    transition-property: background-color, color;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+
     
-    /* display: table;
-    margin: 0 auto;
-    text-align: center; */
-    align-items: center;
-    justify-content: center;
 }
