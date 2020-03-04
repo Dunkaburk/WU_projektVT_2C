@@ -9,7 +9,7 @@
 }
 
 /*---------------------------------------------- Grids --------------------------------------------------------*/
-
+/* 
 .topwrapper {
     display: grid;
     width: 100vw;
@@ -26,20 +26,21 @@
     
     ;
 
-}
-
-@media screen and (min-width: 768px) {  /* Fixa */
+} */
+/* 
+@media screen and (min-width: 768px) {  
 .topwrapper {
 
     grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: 1fr;
     grid-template-areas: 
     
-        "tom bilar tom omoss tom omoss2 tom omoss3 logo tom tom tom tom tom tom tom tom tom tom tom tom tom tom tom"
+        "tom2 bilar tom3 omoss tom4 omoss2 tom5 omoss3 logo tom6 tom6 tom6 tom6 tom6 tom6 tom6 tom6 tom6 tom6 tom6 tom6 tom6 tom6 tom6"
         
     ;
     
 } 
-}
+} */
 /* .mainwrapper {
     display: grid;
     width: 375px;
@@ -77,6 +78,7 @@
 }
 
 
+
 .bilar  {
     /* text-align: center; */
     
@@ -85,10 +87,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: rgb(138, 138, 138);
     font-size: 14px;
 
 }
+
+
 
 .omoss {
     grid-area: omoss;
@@ -96,9 +100,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-size: 14px;
+    color: rgb(138, 138, 138);
+    font-size: 12px;
+    margin-right: 6.5px;
 }
+
 
 .logo {
     grid-area: logo;
@@ -108,6 +114,8 @@
     align-items: center;
     
 }
+
+
 
 .volvologga {
     grid-area: logo;
@@ -119,16 +127,19 @@
     height: auto;
 }
 
+
 .omoss2 {
     grid-area: omoss2;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: rgb(138, 138, 138);
     font-size: 14px;
 
 }
+
+
 
 .omoss3 {
     grid-area: omoss3;
@@ -136,10 +147,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: rgb(138, 138, 138);
     font-size: 14px;
 
 }
+
+
+
 /*--------------------------------- Sidan --------------------------------------------------*/
 
 
@@ -155,6 +169,11 @@
     
     
 
+}
+
+.slider {
+    height: 20vh;
+    width: 100%;
 }
 
 .volvovinter {
@@ -224,7 +243,6 @@
 
 .tom {
     grid-area: tom;
-
     height: 10vh; 
 }
 
@@ -252,4 +270,156 @@
     transition-delay: 0s, 0s;
 
     
+}
+
+/* Hovering links */
+.topwrapper a:hover::after {
+    transition: all 0.3s;
+    content: "";
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: -5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/*-------------------------------------------------- Media queries -----------------------------------------------------*/
+
+@media screen and (min-width: 768px) {  
+    .bilar  {
+        /* text-align: center; */
+        
+        
+        width: 80px;
+        margin-left: 80px;
+        font-size: 18px;
+        color: rgb(138, 138, 138);
+    
+    }
+
+
+
+    .omoss {
+        font-size: 18px;
+        margin-left: 80px;
+        width: 130px;
+        color: rgb(138, 138, 138);
+    }
+
+
+
+    .volvologga {
+       
+        width: 80px;
+        max-width: 80px;
+        
+    }
+
+
+ 
+    .logo {
+        position: fixed;
+        top: 1.5vh;
+        left: calc(50vw - 80px);
+        width: 80px;
+        
+        
+        
+    }
+
+
+
+
+    
+    .omoss2 {
+        font-size: 18px;
+        width: 80px;
+        margin-left: 80px;
+        color:rgb(138, 138, 138);
+    
+    }
+    
+
+
+    .omoss3 {
+    font-size: 18px;
+    width: 80px;
+    margin-left: 100px;
+    color: rgb(138, 138, 138);
+    
+    
+
+}
+
+
+
+    .bil {
+        height: 90vh;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+.agi {
+    position: absolute;
+    top: 90vh;
+    left: 10vw;
+    z-index: 2;
+
+}
+
+
+.com {
+    position: absolute;
+    top: 90vh;
+    right: 31vw;
+    z-index: 2;
+}
+
+
+
+.sol {
+    position: absolute;
+    top: 90vh;
+    left: 31vw;
+    z-index: 2;
+}
+
+
+
+.who {
+    position: absolute;
+    top: 90vh;
+    right: 10vw;
+    z-index: 2;
+}
+
+
+
+.tit {
+    position: absolute;
+    top: 15vh;
+    left: 37vw;
+    z-index: 2;
+}
+
+
+
+.slider {
+    height: 90vh;
+    width: 100%;
+}
+
+.tit p{
+    
+    font-size: 58px;
+}
 }

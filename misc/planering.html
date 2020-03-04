@@ -10,15 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dokumentation projekt Vt</title>
 
-    <style>
-        table, td, th {
-            border: 1px solid black
-        }
-    </style>
-
+    <style>table{border-collapse:collapse}td,th{padding:5px;text-align:left}th{background-color:#212121;color:#fff}tr:nth-child(even){background-color:#f2f2f2}.main{border-radius:20px;border:2px solid #000;text-align:center;width:50vw;margin:auto;padding:20px}h3{overflow:hidden;text-align:center}h3:after,h3:before{background-color:#000;content:"";display:inline-block;height:1px;position:relative;vertical-align:middle;width:50%}h3:before{right:.5em;margin-left:-50%}h3:after{left:.5em;margin-right:-50%}</style>
 </head>
 <body>
-
+    <div class="main">
     <h1>Dokumentation projekt Vt</h1>
 
     <h2>1. Idébeskrivning</h2>
@@ -179,6 +174,7 @@
     <h3>Lektion vecka 10</h3>
     <!-- Fyll på med dokumentation här. -->
 
+    Lektionen idag dedikerade jag först till att fixa ett väldigt udda problem jag hade. Min media-query fungerade inte vad jag än gjorde. Fast bara på min grid. Jag insåg senare att min navbar faktiskt inte var i en grid utan att den bara automatiskt lagt sig rätt med flexbox utan att jag visste det vilket resulterade i att även om jag ändrade gridden så påverkades inte min navbar då min navbar inte ens blev påverkad av gridden från första början. Jag tog därför bort gridden och stylade om navbaren aningen så att den skulle fungera bättre. Sedan spenderade jag resten av lektionen med att göra media_queries utan en grid som med hjälp av position:absolute och z-index ändrade placeringen av alla mina element. Men jag kommer behöva göra en till media_query för hur det ska se ut på en storlek mellan mobil och desktop.
     <h3>Lektion vecka 11</h3>
     <!-- Fyll på med dokumentation här. -->
 
@@ -192,6 +188,6 @@
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
-
+</div>
 </body>
 </html>
