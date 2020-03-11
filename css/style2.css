@@ -1,0 +1,163 @@
+.topwrapper {
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    
+    height: 10vh;
+    width: 100%;
+    flex-direction: row;
+    
+    
+}
+
+
+
+.bilar  {
+    /* text-align: center; */
+    
+    grid-area: bilar;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(138, 138, 138);
+    font-size: 14px;
+
+}
+
+
+
+.omoss {
+    grid-area: omoss;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(138, 138, 138);
+    font-size: 12px;
+    margin-right: 6.5px;
+}
+
+
+.logo {
+    grid-area: logo;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.volvologga {
+    grid-area: logo;
+    width: 90%;
+    max-width: 64.28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+
+.omoss2 {
+    grid-area: omoss2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(138, 138, 138);
+    font-size: 14px;
+
+}
+
+
+
+.omoss3 {
+    grid-area: omoss3;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(138, 138, 138);
+    font-size: 14px;
+
+}
+
+
+
+@media screen and (min-width: 768px) {  
+    .bilar  {
+        /* text-align: center; */
+        
+        
+        width: 80px;
+        margin-left: 80px;
+        font-size: 18px;
+        color: rgb(138, 138, 138);
+    
+    }
+
+
+
+    .omoss {
+        font-size: 18px;
+        margin-left: 80px;
+        width: 130px;
+        color: rgb(138, 138, 138);
+    }
+
+
+
+    .volvologga {
+       
+        width: 80px;
+        max-width: 80px;
+        
+    }
+
+
+ 
+    .logo {
+        position: fixed;
+        top: 1.5vh;
+        left: calc(50vw - 80px);
+        width: 80px;
+        
+        
+        
+    }
+
+
+
+
+    
+    .omoss2 {
+        font-size: 18px;
+        width: 80px;
+        margin-left: 80px;
+        color:rgb(138, 138, 138);
+    
+    }
+    
+
+
+    .omoss3 {
+    font-size: 18px;
+    width: 80px;
+    margin-left: 100px;
+    color: rgb(138, 138, 138);
+    
+    
+
+}
+
+
+
+    .bil {
+        height: 90vh;
+        
+    }
+}

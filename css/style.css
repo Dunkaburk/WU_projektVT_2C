@@ -241,10 +241,7 @@
     
 }
 
-.tom {
-    grid-area: tom;
-    height: 10vh; 
-}
+
 
 .blaknapp {
     width: 357.2px;
@@ -272,8 +269,8 @@
     
 }
 
-/* Hovering links */
-.topwrapper a:hover::after {
+/* Hovering links  Fixa denna*/
+/* .topwrapper a:hover::after {
     transition: all 0.3s;
     content: "";
     position: absolute;
@@ -282,9 +279,9 @@
     bottom: -5px;
     border: 2px solid black;
     border-radius: 10px;
-}
+} */
 
-/*-------------------------------------------------- Media queries -----------------------------------------------------*/
+/*-------------------------------------------------- Media queries desktop--------------------------------------------------*/
 
 @media screen and (min-width: 768px) {  
     .bilar  {
@@ -406,8 +403,8 @@
 
 .tit {
     position: absolute;
-    top: 15vh;
-    left: 37vw;
+    top: 0.15vh;
+    left: 70vw;
     z-index: 2;
 }
 
@@ -419,7 +416,44 @@
 }
 
 .tit p{
+    color: gray;
     
-    font-size: 58px;
 }
+
+.quo {
+    position: absolute;
+    bottom: 10vh;
+    right: 33%;
+    left: 33%;
+    z-index: 2;
+}
+
+.quo p{
+    color: rgb(228, 228, 228);
+    font-size: 46px;
+}
+}
+
+
+/*-------------------------------------------------- Media queries middle --------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1900px) {  
+    
+.tit {
+    right: 5px;
+}
+
+.tit p{
+    font-size: 24px;
+}
+
+.logo {
+    left: 90vw;
+}
+
+
+
+
+
+
 }
