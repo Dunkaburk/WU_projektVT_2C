@@ -5,6 +5,7 @@
     box-sizing: border-box;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
     
 }
 
@@ -161,7 +162,7 @@
 
 .bil {
     /* grid-area: bil; */
-    background-color: red;
+    background-color: none;
     
     height: 20vh;
     margin-top: 10vh;

@@ -7,7 +7,7 @@ var time = 3500;
 
 //image list
 images[0] = "img/winter_driving.jpg";
-images[1] = "img/reparationbild_kopia1.jpg";
+images[1] = "img/volvo_ad.jpg";
 images[2] = "img/crash_test.jpg";
 
 //Function
