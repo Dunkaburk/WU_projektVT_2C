@@ -5,7 +5,7 @@
     box-sizing: border-box;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    
+    text-decoration: none;
 }
 
 
@@ -39,12 +39,15 @@
 
 /* ------------------------------------------------ Navigationsbar ---------------------------------------------------------------- */
 
+
 .topwrapper {
     position: fixed;
     display: flex;
     top: 0px;
     left: 0px;
+    background-color: white;
     
+    z-index: 3;
     height: 10vh;
     width: 100%;
     flex-direction: row;
@@ -55,7 +58,7 @@
 
 
 .bilar  {
-    /* text-align: center; */
+
     
     grid-area: bilar;
     width: 100%;
@@ -127,12 +130,7 @@
 
 }
 
-.white {
-    width: 100vw;
-    height: 10vh;
-    z-index: 2;
-    color: white;
-}
+
 
 /* -------------------------------------------- Huvudsida ------------------------------------------------------------------*/
 
@@ -158,6 +156,43 @@
     top: 15vh;
 
     color: black;
+    font-size: 24px;
+}
+
+.link1 {
+    position: absolute;
+    left: calc(50% - 150px);
+    top: 20vh;
+
+    color: #007BCD;
+    font-size: 24px;
+}
+
+.link2 {
+    position: absolute;
+    left: calc(50% - 150px);
+    top: 25vh;
+
+    color: #007BCD;
+    font-size: 24px;
+}
+
+.link3 {
+    position: absolute;
+    left: 50%;
+    top: 20vh;
+
+    color: #007BCD;
+    font-size: 24px;
+}
+
+.link4 {
+    position: absolute;
+    left: 50%;
+    top: 25vh;
+
+    color: #007BCD;
+    font-size: 24px;
 }
 
 /*-------------------------------------------------- Solution 1 ---------------------------------------------------------*/
@@ -175,18 +210,18 @@
     height: auto;
     position: absolute;
     left: 1150px;
-    top: 50vh;
+    top: 45vh;
 
     color: black;
     font-size: 26px;
 }
 
-.losnign1titel {
+.losning1titel {
     width: 700px;
     height: auto;
     position: absolute;
     left: 1150px;
-    top: 45vh;
+    top: 40vh;
 
     color: black;
     font-size: 36px;
@@ -195,7 +230,7 @@
 
 .losning1knapp {
     position: absolute;
-    top: 69vh;
+    top: 63vh;
     left: 1150px;
 }
 
@@ -204,6 +239,7 @@
 .volvo_refresh2 {
     width: 900px;
     height: auto;
+    max-height: 448px;
     position: absolute;
     top: 90vh;
     right: 200px;
@@ -214,13 +250,13 @@
     height: auto;
     position: absolute;
     right: 1150px;
-    top: 110vh;
+    top: 100vh;
 
     color: black;
     font-size: 26px;
 }
 
-.losnign2titel {
+.losning2titel {
     width: 700px;
     height: auto;
     position: absolute;
@@ -234,18 +270,96 @@
 
 .losning2knapp {
     position: absolute;
-    top: 115vh;
+    top: 117vh;
     right: 1150px;
 }
 
-/* -------------------------------------------- Media Queries ---------------------------------------------------------------*/
+/*-------------------------------------------------- Solution 3 ---------------------------------------------------------*/
 
 
-@media screen and (min-width: 768px) {  
+.volvo_refresh3 {
+    width: 900px;
+    height: auto;
+    max-height: 448px;
+    position: absolute;
+    top: 150vh;
+    left: 200px;
+}
+
+.losning3 {
+    width: 700px;
+    height: auto;
+    position: absolute;
+    left: 1150px;
+    top: 160vh;
+
+    color: black;
+    font-size: 26px;
+}
+
+.losning3titel {
+    width: 700px;
+    height: auto;
+    position: absolute;
+    left: 1150px;
+    top: 155vh;
+
+    color: black;
+    font-size: 36px;
+
+}
+
+.losning3knapp {
+    position: absolute;
+    top: 180vh;
+    left: 1150px;
+}
+
+/*-------------------------------------------------- Solution 4 ---------------------------------------------------------*/
+
+.volvo_refresh4 {
+    width: 900px;
+    height: auto;
+    max-height: 448px;
+    position: absolute;
+    top: 200vh;
+    right: 200px;
+}
+
+.losning4 {
+    width: 700px;
+    height: auto;
+    position: absolute;
+    right: 1150px;
+    top: 210vh;
+
+    color: black;
+    font-size: 26px;
+}
+
+.losning4titel {
+    width: 700px;
+    height: auto;
+    position: absolute;
+    right: 1150px;
+    top: 205vh;
+
+    color: black;
+    font-size: 36px;
+
+}
+
+.losning4knapp {
+    position: absolute;
+    top: 227vh;
+    right: 1150px;
+}
+
+
+/* -------------------------------------------- nav bar för desktop  ---------------------------------------------------------------*/
+ 
     .bilar  {
         /* text-align: center; */
-        
-        
         width: 80px;
         margin-left: 80px;
         font-size: 18px;
@@ -313,4 +427,259 @@
         height: 90vh;
         
     }
+
+ /*---------------------------------------------------- Media queries mobil -----------------------------------------*/
+ @media screen and (max-width: 1000px) {
+    .topwrapper {
+        position: fixed;
+        display: flex;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        
+        height: 10vh;
+        width: 100%;
+        flex-direction: row;
+        
+        
+    }
+    
+    
+    
+    .bilar  {
+        text-align: center; 
+        
+        
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-left: 0px;
+        
+        justify-content: center;
+        align-items: center;
+        color: rgb(138, 138, 138);
+        font-size: 14px;
+    
+    }
+    
+    
+
+    
+    .omoss {
+        text-align: center;
+        width: 100%;
+        height:auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(138, 138, 138);
+        font-size: 12px;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+        
+    }
+    
+    
+    .logo {
+        
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: none;
+        align-items: none;
+        position: static;
+        margin-top: 0px;
+        left: 0px;
+        top: 0px;
+        
+    }
+    
+    
+    
+    .volvologga {
+        
+        width: 100%;
+        max-width: 64.28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
+    
+    .omoss2 {
+        
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(138, 138, 138);
+        font-size: 14px;
+        margin-left: 0px;
+        
+    }
+    
+    
+    
+    .omoss3 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(138, 138, 138);
+        font-size: 14px;
+        margin-left: none;
+        margin-left: 0px;
+        
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+.solutions {
+    max-width: 355px;
+    position: static;
+    top: 10vh;
+    left: none;
+    right: none;
+    bottom: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 22px;
+}
+
+.inledning {
+    max-width: 355px;
+    text-align: center;
+    position: static;
+    top: none;
+    left: none;
+    right: none;
+    bottom: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+.volvo_refresh {
+    max-width: 355px;
+    position: static;
+    top: none;
+    left: none;
+    right: none;
+    bottom: none;
+
+    margin-top: 15vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.volvo_refresh2, .volvo_refresh3, .volvo_refresh4 {
+    max-width: 355px;
+    position: static;
+    top: none;
+    left: none;
+    right: none;
+    bottom: none;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.losning1titel, .losning2titel, .losning3titel, .losning4titel {
+    width: 355px;
+    position: static;
+    top: none;
+    left: none;
+    right: none;
+    bottom: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.losning1, .losning2, .losning3, .losning4 {
+    width: 355px;
+    position: static;
+    top: none;
+    left: none;
+    right: none;
+    bottom: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 5px;
+    margin-top: 0vh;
+    text-align: center;
+    font-size: 18px;
+}
+
+.losning1knapp, .losning2knapp, .losning3knapp, .losning4knapp {
+    width: 355px;
+    position: static;
+    top: none;
+    left: none;
+    right: none;
+    bottom: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
+
+
+
+/*----------------------------------------------------- Media queries middle -------------------------------------------------------*/
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1900px) {  
+
+
+
+
+
+
+
+    
+
+
+
+
 }
