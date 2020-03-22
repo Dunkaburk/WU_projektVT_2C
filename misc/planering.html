@@ -154,6 +154,8 @@
 
     <h3>Lektion vecka 4</h3>
     <!-- Fyll på med dokumentation här. -->
+    (Skriver detta i efterhand då jag inte verkar ha dokumenterat denna lektionen, ursäkta att jag inte kommer ihåg väldigt bra.)
+    Vi gick först och främst igenom grunderna av projektet idag och dedikerade majoriteten av lektionen till att planera vårat arbete. Jag valde att göra mitt gränssnittsdesignprojekt jag gjort tidigare till en riktig hemsida då jag redan hade så gott som hela layouten färdig.
 
     <h3>Lektion vecka 5</h3>
     <!-- Fyll på med dokumentation här. -->
@@ -187,7 +189,11 @@
     <h2>4. Testning</h2>
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? Hur ser resultatet ut på en riktig telefon? -->
 
-    
+    Testningen under processen skedde primärt med hjälp av en liveserver som jag ständigt höll koll på och såg till att allt jag skrev på koden blev det jag ville på hemsidan. För att senare kolla tillbaka på min kod och vilka värden mina olika element i koden använde jag inspektorn in chrome. Jag använde även inspektorn för att ändra skärmstorlek och testa olika enheter och media-queries.
+
+    Jag känner särskilt att inspektorn har hjälpt mig mycket då den berättar alla egenskaper varje element har vilket har hjälpt mig förstå varför vissa element har de egenskaperna de har.
+
+    Jag validerade sedan min kod med online html och css validators och rättade till små fel som de pekade ut men jag fick egentligen inte ut mycket av det. Gällande gränssnitt så hade jag inte stora problem med att ha rätt konstrast och likanade då detta kom ganska naturligt till min hemsida. Särskilt eftersom jag redan hade vovlos gränssnitt att utgå ifrån.
 
 
 
@@ -195,6 +201,15 @@
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
+
+    Mitt projekt mötte rakt från början lite av en roadblock då jag bytte projekt efter en lektion. Lyckligtvis ledde det ju bara till att jag fick en lektion mindre men ett större problem var att jag nu var tvungen att kommunicera med min uppdragsgivare för att veta vad sidan skulle innehålla samt att jag var tvungen att skapa nya skisser i figma. Jag hade ett annat problem tidigt i projektet där jag inte kunde bestämma mig om jag ville använda grid eller flexbox och jag bytte därför ett flertal gånger mellan de vilket tog ganska mycket tid. Jag är dock nöjd med att tog min tid då det ledde till att alla mina beslut var väldigt genomtänkta och därför hyfsat lättgenomförda. Hade jag vetat mer om flexbox innan projektets början hade jag definitivt använt det från början istället för att vimsa runt och försöka hitta det optimala sättet. Om jag istället använt grid tror jag självklart att jag skulle förmodligen fått ungefär samma resultat men jag tror att hemsidans flexibilitet skulle minska och hur lång tid den tog att göra skulle öka. Dock tror jag att media queries skulle blivit betydligt lättare med grid då jag så gott som bara kunnat ändra några grid-areas för att ändra layouten. 
+    
+    Jag kände att min användning av "position" har gått väldigt bra detta projektet. Jag har använt många olika sorters "positions" och lärt mig mer om användningsområden för varje sorts position. Jag känner att i slutändan fick jag även ett bra resultat med dessa positioner vilket var kul. 
+
+    Jag kände även att mitt javascript var väldigt lyckat. Jag stötte inte på så gott som ett enda problem medans jag satte upp det och det fungerade precis som jag ville att det skulle göra. Dock känner jag att om jag hade haft mer tid hade jag gärna gett bildspelet fler funktioner som att man kanske skulle kunna scrolla mellan bilderna själv men det hann jag inte riktigt.
+
+    Det största problemet jag stötte på hände faktiskt bara 2 dagar innan inlämningen. Det var att plötsligt, utan att ha ändrat i koden, så ändrades varenda element på alla mina sidor aningen (ofta i storlek). Detta var ett gigantiskt problem då ingen viste varför det skett och den enda anledningen jag kunde tänka mig var att min dator på något sätt läste in fel skärmupplösning. Jag löste detta problemet, efter många timmars felsökning, genom att skapa en kopia av hela koden och modifiera så gott som varenda element tills det passade. Hur jag gjorde detta var genom att göra nästan alla mått relativa, antingen genom vh/vw eller %, vilket ledde till att de inte kunde bli fel vilket upplösning man än har. Denna nya version bör därför fungera med alla upplösningar vilket jag tycker är fantastiskt.
+
 </div>
 </body>
 </html>
